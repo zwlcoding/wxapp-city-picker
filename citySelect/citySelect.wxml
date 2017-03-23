@@ -1,0 +1,28 @@
+<template name="addressPicker">
+  <view class="city-select-wrap">
+    <view class="city-select-view">
+
+      <picker bindchange="bindProvinceChange" value="{{provinceState.index}}" range-key="name" range="{{provinceState.data}}">
+        <view class="city-select-text">
+          {{provinceState.data[provinceState.index].name}}
+        </view>
+      </picker>
+
+    </view>
+    <view class="city-select-view">
+      <picker bindchange="bindCityChange" value="{{cityState.index}}" range-key="name" range="{{cityState.data}}">
+        <view class="city-select-text">
+          {{cityState.data[cityState.index].name}}
+        </view>
+      </picker>
+    </view>
+    <view class="city-select-view">
+      <picker bindchange="bindAreaChange" value="{{areaState.index}}" range-key="name" range="{{areaState.data}}">
+        <view class="city-select-text">
+          {{areaState.data[areaState.index].name}}
+        </view>
+      </picker>
+    </view>
+  </view>
+</template>
+
