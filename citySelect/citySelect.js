@@ -124,55 +124,5 @@ const citySelect = {
   }
 }
 
-// function init(that){
-//   that.setData( {
-//     'city': city
-//   });
-//
-//   var bindProvinceChange = function(e){
-//     var city=that.data.city;
-//
-//
-//     var provIndex = e.detail.value
-//     var provName = city.province[provIndex].name
-//     var provCode = city.province[provIndex].code
-//     var provParentId = city.province[provIndex].parentId
-//     console.group('====> select 市 START')
-//     console.log('索引===>' + provIndex )
-//     console.log('地名===>' + provName )
-//     console.log('邮编===>' + provCode )
-//     console.log('父级ID=>' + provParentId )
-//     console.log('子集===>' + provParentId )
-//
-//
-//     that.setData({
-//       'city.provinceIndex': provIndex,
-//       'city.selectedProvince': city.province[provIndex],
-//       'city.selectedCity': city.city[city.province[e.detail.value]][0],
-//       'city.selectedDistrct': city.district[city.city[city.province[e.detail.value]][0]][0],
-//       'city.cityIndex':0,
-//       'city.districtIndex':0
-//     });
-//   };
-//   var bindCityChange = function(e){
-//     var city=that.data.city;
-//     that.setData({
-//       'city.cityIndex': e.detail.value,
-//       'city.selectedCity': city.city[city.selectedProvince][e.detail.value],
-//       'city.districtIndex':0,
-//       'city.selectedDistrct': city.district[city.city[city.selectedProvince][e.detail.value]][0]
-//     });
-//   };
-//   var bindDistrictChange = function(e){
-//     var city=that.data.city;
-//     that.setData({
-//       'city.districtIndex': e.detail.value,
-//       'city.selectedDistrct':city.district[city.selectedCity][e.detail.value]
-//     });
-//   };
-//   that['bindProvinceChange']=bindProvinceChange;
-//   that['bindCityChange'] = bindCityChange;
-//   that['bindDistrictChange'] = bindDistrictChange;
-// }
 
 module.exports =  citySelect
