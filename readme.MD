@@ -1,3 +1,5 @@
+
+
 ### 使用方法
 
 自行改成对应的 require 路径
@@ -15,7 +17,7 @@
 ```js
 var citySelect = require('../../../ui/citySelect/citySelect.js')
 
-onload: function(){
+onLoad: function(){
      var that = this
      citySelect.init(that)
 }
